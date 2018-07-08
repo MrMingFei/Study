@@ -1,4 +1,4 @@
-package com.thinkInJava.fifthChapter;
+package com.thinkInJava.fifthchapter;
 
 //: initialization/TerminationCondition.java
 //Using finalize() to detect an object that

@@ -1,4 +1,4 @@
-package com.thinkInJava.fifthChapter;
+package com.thinkInJava.fifthchapter;
 
 //Calling constructions with "this"
 public class Flower {

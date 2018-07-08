@@ -1,10 +1,11 @@
-package com.thinkInJava.fifthChapter;
+package com.thinkInJava.fifthchapter;
 
 public class ExplicitStatic {
     public static void main(String[] args){
         System.out.println("Inside main()");
         Cups.c1.f(99);
     }
+
     static Cups x = new Cups();
     static Cups y = new Cups();
 }

@@ -1,4 +1,4 @@
-package com.thinkInJava.fifthChapter;
+package com.thinkInJava.fifthchapter;
 
 public class OrderOfInitialization {
     public static void main(String[] args){
