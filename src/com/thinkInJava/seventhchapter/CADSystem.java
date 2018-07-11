@@ -16,7 +16,21 @@ public class CADSystem extends Shape {
         print("Combined constructor");
     }
     void cleanup(){
-        print("");
+        print("CADSystem.cleanup()");
+        circle.cleanup();
+        triangle.cleanup();
+        for (int i = 0; i < lines.length; i++){
+            lines[i].cleanup();
+        }
+        super.cleanup();
+    }
+    public static void main(String[] args){
+        CADSystem cadSystem = new CADSystem(47);
+        try{
+
+        }finally {
+            cadSystem.cleanup();
+        }
     }
 }
 class Shape{
