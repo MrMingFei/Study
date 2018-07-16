@@ -1,4 +1,4 @@
-package com;
+package com.dailyaccumulation;
 
 public class checkDuplicate {
     public static void main(String[] args){

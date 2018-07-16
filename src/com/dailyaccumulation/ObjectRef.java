@@ -1,4 +1,4 @@
-package com;
+package com.dailyaccumulation;
 
 public class ObjectRef {
 
