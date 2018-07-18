@@ -2,19 +2,14 @@ package com.thinkInJava.eighthchapter.music;
 
 import static com.thinkInJava.mylibraries.Print.print;
 
-public class Wind extends Instrument {
+public class Brass extends Wind {
     @Override
     public void play(Note note) {
-        System.out.println("Wind.play() " + note);
-    }
-
-    @Override
-    public String what() {
-        return "Wind";
+        print("Brass.play() " + note);
     }
 
     @Override
     public void adjust() {
-        print("Adjusting Wind");
+        print("Adjusting Brass");
     }
 }
