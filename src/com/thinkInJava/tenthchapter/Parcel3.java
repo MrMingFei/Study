@@ -1,4 +1,4 @@
-package com.thinkInJava.eleventhchapter;
+package com.thinkInJava.tenthchapter;
 
 public class Parcel3 {
     class Contents{

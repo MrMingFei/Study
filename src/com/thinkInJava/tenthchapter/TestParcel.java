@@ -1,4 +1,4 @@
-package com.thinkInJava.eleventhchapter;
+package com.thinkInJava.tenthchapter;
 
 public class TestParcel {
     public static void main(String[] args){

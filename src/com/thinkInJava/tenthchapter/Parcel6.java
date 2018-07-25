@@ -1,4 +1,4 @@
-package com.thinkInJava.eleventhchapter;
+package com.thinkInJava.tenthchapter;
 
 public class Parcel6 {
     private void internalTracking(boolean b){

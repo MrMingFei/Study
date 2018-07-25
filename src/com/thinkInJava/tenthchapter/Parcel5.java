@@ -1,4 +1,4 @@
-package com.thinkInJava.eleventhchapter;
+package com.thinkInJava.tenthchapter;
 
 public class Parcel5 {
     public Destination destination(String s){
