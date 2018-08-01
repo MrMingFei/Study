@@ -98,5 +98,9 @@ public class ArrayImplStack<Item> implements Iterable<Item> {
             }
         }
         print(stack.pop());
+        Iterator iterator = stack.iterator();
+        while (iterator.hasNext()){
+            print(iterator.next());
+        }
     }
 }
