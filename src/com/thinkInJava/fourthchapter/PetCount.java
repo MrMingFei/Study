@@ -1,9 +1,7 @@
 package com.thinkInJava.fourthchapter;
 
 import com.thinkInJava.fourthchapter.pets.*;
-
 import java.util.HashMap;
-
 import static com.thinkInJava.mylibraries.Print.*;
 
 public class PetCount {
