@@ -28,6 +28,7 @@ public class ArrayImplStack<Item> implements Iterable<Item> {
     //改变栈的大小
     private void resize(int capacity){
         assert capacity >= 0;
+        //注意不能直接创建泛型数组
         Item[] temp = (Item[]) new Object[capacity];
         for (int i = 0; i < n; i++){
             temp[i] = a[i];
