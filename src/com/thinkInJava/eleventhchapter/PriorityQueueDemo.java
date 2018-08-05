@@ -30,5 +30,12 @@ public class PriorityQueueDemo {
         stringPQ = new PriorityQueue<String>(stringList.size(), Collections.<String>reverseOrder());
         stringPQ.addAll(stringList);
         printQ(stringPQ);
+
+        Set<Character> characterSet = new HashSet<Character>();
+        for (char c : fact.toCharArray()){
+            characterSet.add(c);
+        }
+        PriorityQueue<Character> characterPQ = new PriorityQueue<Character>(characterSet);
+        printQ(characterPQ);
     }
 }
