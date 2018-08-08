@@ -17,8 +17,8 @@ public class test13_12 {
             "Beware the Jubjub bird, and shun\n" +
             "The frumious Bandersnatch.";
     public static void main(String[] args){
-        //Matcher m=Pattern.compile("(?m)(^|\\s+)([a-z]\\w+)").matcher(POEM);
-        Matcher m=Pattern.compile("((^[a-z])|\\s+)([a-z]\\w+)").matcher(POEM);
+        Matcher m=Pattern.compile("(?m)(^|\\s+)([a-z]\\w+)").matcher(POEM);
+        //Matcher m=Pattern.compile("((^[a-z])|\\s+)([a-z]\\w+)").matcher(POEM);
         int i=0;
         Set<String> set=new LinkedHashSet<String>();
         while(m.find()){
