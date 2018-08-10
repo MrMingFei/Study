@@ -22,6 +22,8 @@ public class ToyTest {
             printInfo(face);
         }
         Class up = c.getSuperclass();
+        //貌似可以直接就在这里输出up了
+        //printInfo(up);
         Object obj = null;
         try {
             obj = up.newInstance();

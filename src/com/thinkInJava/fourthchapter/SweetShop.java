@@ -33,6 +33,5 @@ class Gum{
 class Cookie{
     static {
         print("Loading Cookie");
-        System.out.println();
     }
 }
