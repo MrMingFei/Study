@@ -17,7 +17,7 @@ public class TestRegularExpression {
             Pattern p = Pattern.compile(arg);
             Matcher m = p.matcher(args[0]);
             while (m.find()){
-                print("Match \"" + m.group() + "\" at position " + m.start() + "-" + (m.end() - 1));
+                print("Match \"" + m.group() + "\" at Position " + m.start() + "-" + (m.end() - 1));
             }
         }
     }
