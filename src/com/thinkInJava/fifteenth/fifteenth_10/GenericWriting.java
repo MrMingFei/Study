@@ -15,6 +15,7 @@ public class GenericWriting {
         writeExact(apples, new Apple());
         try {
             writeExact(fruits, new Apple());
+            writeExact(apples, new Apple());
         }catch (Exception e){
             print(e);
         }
@@ -29,6 +30,7 @@ public class GenericWriting {
     }
     public static void main(String[] args){
         f1();
+        print(apples.toString());
         f2();
     }
 }
