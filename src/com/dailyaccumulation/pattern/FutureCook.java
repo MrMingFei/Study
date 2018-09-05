@@ -19,7 +19,6 @@ public class FutureCook {
                 System.out.println("第一步：快递送到");
                 return new Chuju();
             }
-
         };
         FutureTask<Chuju> task = new FutureTask<Chuju>(onlineShopping);
         new Thread(task).start();
