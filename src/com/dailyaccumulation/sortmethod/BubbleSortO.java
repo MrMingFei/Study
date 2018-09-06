@@ -2,7 +2,7 @@ package com.dailyaccumulation.sortmethod;
 
 import java.util.Arrays;
 
-public class OBubbleSort {
+public class BubbleSortO {
     private static void sort(int[] array){
         int temp = 0;
         // 记录最后一次进行交换的位置
@@ -12,7 +12,8 @@ public class OBubbleSort {
         for (int i = 0; i < array.length; i++){
             // 有序标记，每一轮的初始都是true
             boolean isSotered = true;
-            for (int j = 0; j < sortBorder; i++){
+
+            for (int j = 0; j < sortBorder; j++){
                 if(array[j] > array[j+1]){
                     temp = array[j];
                     array[j] = array[j+1];

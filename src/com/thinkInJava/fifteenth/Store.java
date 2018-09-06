@@ -56,7 +56,7 @@ class Product{
                 Random rand = new Random(47);
                 @Override
                 public Product next() {
-                    return new Product(rand.nextInt(1000), "Test",
+                    return new Product(rand.nextInt(1000), "BubbleSort",
                             Math.round(rand.nextDouble() * 1000) + 0.99);
                 }
             };

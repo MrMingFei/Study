@@ -8,7 +8,7 @@ public class SimpleProxyDemo {
         iface.somethingElse("bonobo");
     }
     public static void main(String[] args){
-        consumer(new RealObject());
+ //       consumer(new RealObject());
         consumer(new SimpleProxy(new RealObject()));
     }
 }
