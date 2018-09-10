@@ -3,8 +3,7 @@ package com.dailyaccumulation;
 public class ObjectRef {
 
     //基本类型的参数传递
-    public static void testBasicType(int i)
-    {
+    public static void testBasicType(int i) {
         System.out.println("i = " + i);
 
         i = 100;
@@ -22,6 +21,7 @@ public class ObjectRef {
     public static void changeRef(StringBuffer s)
     {
         s = new StringBuffer("Java");
+        System.out.println(s);
     }
 
     public static void main(String[] args)

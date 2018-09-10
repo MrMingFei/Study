@@ -1,4 +1,4 @@
-package com.dailyaccumulation;
+package com.Interview;
 
 public class checkDuplicate {
     public static void main(String[] args){
@@ -15,10 +15,10 @@ public class checkDuplicate {
             System.out.println("Not duplicate characters");
         }
     }
-    boolean checkDuplicateChar(String str){
+    private boolean checkDuplicateChar(String str){
         int[] a = new int [256];
         int len = str.length(), i;
-        char [] elements = str.toCharArray();
+        char[] elements = str.toCharArray();
         if (len > 256)
         {
             return true;
