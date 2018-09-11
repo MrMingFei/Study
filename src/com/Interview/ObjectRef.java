@@ -1,4 +1,4 @@
-package com.dailyaccumulation;
+package com.Interview;
 
 public class ObjectRef {
 
