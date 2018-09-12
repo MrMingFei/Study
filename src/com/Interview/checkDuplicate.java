@@ -1,5 +1,7 @@
 package com.Interview;
 
+import java.util.List;
+
 public class checkDuplicate {
     public static void main(String[] args){
         String string = "QWERT";
