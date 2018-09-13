@@ -1,6 +1,7 @@
 package com.Interview;
 
 public class ConstructBinaryTree {
+
     public BinaryTreeNode construct(int[] preOrder, int[] inOrder, int length){
         if (preOrder == null || inOrder == null || length <= 0){
             return null;
@@ -10,8 +11,10 @@ public class ConstructBinaryTree {
 
     public static BinaryTreeNode constructCore(int[] preOrder, int startPreIndex, int endPreIndex,
                                                int[] inOrder, int startInIndex, int endInIndex){
-        int rootValue = preOrder[startInIndex];
-        BinaryTreeNode root = new BinaryTreeNode(preOrder[startInIndex]);
+        if (startPreIndex > endPreIndex || startInIndex > endInIndex){
+            return null;
+        }
+        int rootValue = preOrder[startPreIndex];
         int index = startInIndex;
         while (index <= endInIndex && rootValue != inOrder[index]){
             index++;
@@ -20,12 +23,14 @@ public class ConstructBinaryTree {
             throw new RuntimeException("Invalid Input");
         }
 
+        BinaryTreeNode root = new BinaryTreeNode(rootValue);
         root.leftNode = constructCore(preOrder, startPreIndex+1, startPreIndex+index-startInIndex,
                                         inOrder, startInIndex, index-1);
         root.rightNode = constructCore(preOrder, startPreIndex+index-startInIndex+1, endPreIndex,
                                         inOrder, index+1, endInIndex);
         return root;
     }
+
     public void printTree(BinaryTreeNode node){
         if (node != null){
             printTree(node.leftNode);
@@ -33,6 +38,7 @@ public class ConstructBinaryTree {
             printTree(node.rightNode);
         }
     }
+
     public static void main(String[] args){
         ConstructBinaryTree binaryTree = new ConstructBinaryTree();
         int[] preOrder = {1,2,4,7,3,5,6,8};
@@ -46,6 +52,7 @@ class BinaryTreeNode{
     public int value;
     public BinaryTreeNode leftNode;
     public BinaryTreeNode rightNode;
+    public BinaryTreeNode parentNode;
 
     public BinaryTreeNode(){}
     public BinaryTreeNode(int value){
