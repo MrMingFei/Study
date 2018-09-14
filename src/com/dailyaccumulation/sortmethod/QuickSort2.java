@@ -1,6 +1,7 @@
 package com.dailyaccumulation.sortmethod;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class QuickSort2 {
     public static void sort(int[] arr, int startIndex, int endIndex){
@@ -8,9 +9,11 @@ public class QuickSort2 {
         if (startIndex > endIndex){
             return;
         }
+        Random rand = new Random(47);
+        int index = rand.nextInt(endIndex);
         i = startIndex;
         j = endIndex;
-        pivot = arr[startIndex];
+        pivot = arr[index];
 
         while (i < j){
             while (i < j && arr[j] > pivot){
