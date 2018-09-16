@@ -1,4 +1,4 @@
-package com.Interview;
+package com.Interview.secondchapter;
 
 import java.util.*;
 

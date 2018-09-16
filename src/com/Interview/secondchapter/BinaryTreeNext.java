@@ -1,4 +1,6 @@
-package com.Interview;
+package com.Interview.secondchapter;
+
+import com.Interview.secondchapter.BinaryTreeNode;
 
 public class BinaryTreeNext {
     public BinaryTreeNode getNext(BinaryTreeNode node){
