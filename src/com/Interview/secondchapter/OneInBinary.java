@@ -25,7 +25,7 @@ public class OneInBinary {
     public int numberOfOne_V2(int n){
         int count = 0;
         int flag = 1;
-        while (flag != 0){
+        while (flag <= 2*n){
             if ((n&flag) != 0){
                 count++;
             }
@@ -43,7 +43,7 @@ public class OneInBinary {
     }
     public static void main(String[] args){
         OneInBinary inBinary = new OneInBinary();
-        int result = inBinary.numberOfOne_V3(13);
+        int result = inBinary.numberOfOne_V2(13);
         System.out.println(result);
     }
 }
