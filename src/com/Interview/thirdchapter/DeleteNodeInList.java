@@ -28,9 +28,8 @@ public class DeleteNodeInList {
 }
 class ListNode{
     public int data;
-    public ListNode next;
-    public ListNode(int data, ListNode next){
+    public ListNode next = null;
+    public ListNode(int data){
         this.data = data;
-        this.next = next;
     }
 }
