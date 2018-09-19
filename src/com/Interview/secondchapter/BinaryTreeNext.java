@@ -1,7 +1,5 @@
 package com.Interview.secondchapter;
 
-import com.Interview.secondchapter.BinaryTreeNode;
-
 public class BinaryTreeNext {
     public BinaryTreeNode getNext(BinaryTreeNode node){
         if (node == null){
