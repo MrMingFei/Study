@@ -29,6 +29,11 @@ public class ArrangementOfString {
             }
         }
     }
+
+    /**
+     * 字符串的组合
+     * @param str
+     */
     public static void combiantion(char[] str){
         if (str == null && str.length == 0)
             return;

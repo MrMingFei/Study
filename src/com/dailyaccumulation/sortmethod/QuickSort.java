@@ -16,7 +16,7 @@ public class QuickSort {
         quickSort(arr, startIndex, pivotIndex - 1);
         quickSort(arr, pivotIndex + 1, endIndex);
     }
-    private static int partition(int[] arr, int startIndex, int endIndex){
+    public static int partition(int[] arr, int startIndex, int endIndex){
         //取第一个位置的元素为基准元素
         int pivot = arr[startIndex];
         int left = startIndex;
@@ -25,30 +25,20 @@ public class QuickSort {
         int index = startIndex;
 
         //大循环在指针重合或者交错时结束
-        while (right >= left){
-            while (right >= left){
-                //right指针从右向左进行比较
-                if (arr[right] < pivot){
-                    arr[left] = arr[right];
-                    index = right;
-                    left++;
-                    break;
-                }
+        while (right > left){
+            while (right > left && arr[right] > pivot){
                 right--;
             }
-            while (right >= left){
-                if (arr[left] > pivot){
-                    arr[right] = arr[left];
-                    index = left;
-                    right--;
-                    break;
-                }
+            if (right > left)
+                arr[left++] = arr[right];
+            while (right > left && arr[left] < pivot){
                 left++;
             }
+            if (right > left)
+                arr[right--] = arr[left];
         }
-        arr[index] = pivot;
-        print(Arrays.toString(arr));
-        return index;
+        arr[left] = pivot;
+        return left;
     }
     public static void main(String[] args){
         int[] arr = new int[]{4, 6, 7, 5, 2, 3, 8, 1};

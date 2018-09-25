@@ -9,11 +9,14 @@ public class QuickSort2 {
         if (startIndex > endIndex){
             return;
         }
-        Random rand = new Random(47);
-        int index = rand.nextInt(endIndex);
+//        Random rand = new Random(47);
+//        int index = rand.nextInt(endIndex);
+//        int temp = arr[startIndex];
+//        arr[startIndex] = arr[index];
+//        arr[index] = temp;
         i = startIndex;
         j = endIndex;
-        pivot = arr[index];
+        pivot = arr[i];
 
         while (i < j){
             while (i < j && arr[j] > pivot){
