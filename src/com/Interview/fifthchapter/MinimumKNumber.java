@@ -1,5 +1,6 @@
-package com.Interview.fourthchapter;
+package com.Interview.fifthchapter;
 
+import com.dailyaccumulation.sortmethod.HeapSort;
 import com.dailyaccumulation.sortmethod.QuickSort;
 
 import java.util.ArrayList;
@@ -34,17 +35,20 @@ public class MinimumKNumber {
         }
         return list;
     }
-    public ArrayList<Integer> getMinimumKNumber_V2(int[] input, int k, int len){
+    public void getMinimumKNumber_V2(int[] input, int k, int len){
         if (input == null || k <= 0 || len <= 0 || k > len)
-            return null;
+            return;
         int[] kArray = Arrays.copyOfRange(input, 0, k);
         buildHeap(kArray);
         for (int i = k; i < input.length; i++){
             if (input[i] < kArray[0]){
                 kArray[0] = input[i];
+                HeapSort.downAdjust(kArray, 0, kArray.length);
             }
         }
-        return null;
+        for (int i = 0; i < k; i++){
+            System.out.print(kArray[i] + " ");
+        }
     }
     /**
      * 构建堆
@@ -53,33 +57,12 @@ public class MinimumKNumber {
     public static void buildHeap(int[] array){
         //从最后一个非叶子节点开始，依次下沉调整
         for (int i = (array.length-2)/2; i >= 0; i--){
-            downAdjust(array, i, array.length);
+            HeapSort.downAdjust(array, i, array.length);
         }
     }
-    /**
-     * 下沉调整
-     * @param array  待调整的堆
-     * @param parentIndex  要下沉的节点
-     * @param length  堆的有效大小
-     */
-    public static void downAdjust(int[] array, int parentIndex, int length){
-        //保存父节点用于最后的赋值
-        int temp = array[parentIndex];
-        int childIndex = parentIndex*2+1;
-        while (childIndex < length){
-            //如果存在右孩子且右孩子的值小于左孩子，则定位到右孩子
-            if (childIndex+1 < length && array[childIndex+1] < array[childIndex]){
-                childIndex++;
-            }
-            //如果父节点的值小于任何孩子节点，跳出循环
-            if (temp <= array[childIndex]){
-                break;
-            }
-            //无需真正交换，单向赋值即可
-            array[parentIndex] = array[childIndex];
-            parentIndex = childIndex;
-            childIndex = childIndex*2+1;
-        }
-        array[parentIndex] = temp;
+    public static void main(String[] args){
+        MinimumKNumber min = new MinimumKNumber();
+        int[] arr = {4, 5, 1, 6, 2, 7, 3, 8};
+        min.getMinimumKNumber_V2(arr, 4, arr.length);
     }
 }
