@@ -59,6 +59,6 @@ public class ArrangementOfString {
         String str;
         Scanner scan = new Scanner(System.in);
         str = scan.nextLine();
-        combiantion(str.toCharArray());
+        permutation(str.toCharArray(),0);
     }
 }
