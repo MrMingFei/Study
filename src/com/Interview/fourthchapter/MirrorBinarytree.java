@@ -60,5 +60,4 @@ class BinaryTreeNode{
     public BinaryTreeNode(int data){
         this.data = data;
     }
-
 }
