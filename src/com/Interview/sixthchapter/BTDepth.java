@@ -13,8 +13,18 @@ public class BTDepth {
         binaryTreeNode2.rightNode = binaryTreeNode5;
 
         BTDepth btDepth = new BTDepth();
-        System.out.println(btDepth.treeDepth(binaryTreeNode1));
+        if (btDepth.isBalancedBT_V2(binaryTreeNode1))
+            System.out.println("是一个平衡二叉树");
+        else
+            System.out.println("非一个平衡二叉树");
     }
+
+    private boolean isBalanced = true;
+    /**
+     * 递归求二叉树的深度
+     * @param root
+     * @return
+     */
     public int treeDepth(BinaryTreeNode root){
         if (root == null)
             return 0;
@@ -23,5 +33,46 @@ public class BTDepth {
         int right = treeDepth(root.rightNode);
 
         return (left > right) ? (left + 1) : (right + 1);
+    }
+    public int treeDepth_V2(BinaryTreeNode root){
+        if (root == null)
+            return 0;
+        return Math.max(treeDepth_V2(root.leftNode), treeDepth_V2(root.rightNode))+1;
+    }
+
+    /**
+     * 判断是否为平衡二叉树
+     * @param root
+     * @return
+     */
+    public boolean isBalancedBT(BinaryTreeNode root){
+        if (root == null)
+            return true;
+
+        int left = treeDepth(root.leftNode);
+        int right = treeDepth(root.rightNode);
+        int diff = left - right;
+
+        if (diff > 1 || diff < - 1){
+            return false;
+        }
+
+        return isBalancedBT(root.leftNode) && isBalancedBT(root.rightNode);
+    }
+    public boolean isBalancedBT_V2(BinaryTreeNode root){
+        getDepth(root);
+        return isBalanced;
+    }
+    public int getDepth(BinaryTreeNode root){
+        if (root == null)
+            return 0;
+
+        int left = getDepth(root.leftNode);
+        int right = getDepth(root.rightNode);
+
+        if (Math.abs(left - right) > 1)
+            isBalanced = false;
+
+        return (left > right) ? left+1 : right+1;
     }
 }
