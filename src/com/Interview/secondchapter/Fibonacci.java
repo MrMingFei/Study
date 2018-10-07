@@ -19,15 +19,24 @@ public class Fibonacci {
             return result[n];
         }
 
-        int fibOne = 1;
-        int fibTwo = 0;
+        int fibOne = 0;
+        int fibTwo = 1;
         int fibEnd = 0;
-        for (int i = 2; i <= n; ++i){
+        for (int i = 2; i <= n; i++){
             fibEnd = fibOne + fibTwo;
 
-            fibTwo = fibOne;
-            fibOne = fibEnd;
+            fibOne = fibTwo;
+            fibTwo = fibEnd;
         }
+//        int fibOne = 1;
+//        int fibTwo = 0;
+//        int fibEnd = 0;
+//        for (int i = 2; i <= n; ++i){
+//            fibEnd = fibOne + fibTwo;
+//
+//            fibTwo = fibOne;
+//            fibOne = fibEnd;
+//        }
         return fibEnd;
     }
     public static void main(String[] args){

@@ -1,6 +1,11 @@
 package com.Interview.secondchapter;
 
 public class ReplaceSpace {
+    /**
+     * 替换空格
+     * @param string
+     * @return
+     */
     public static String replaceSpace(char[] string){
         if (string.length < 0 || string == null){
             return null;

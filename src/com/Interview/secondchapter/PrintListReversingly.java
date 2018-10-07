@@ -32,7 +32,7 @@ public class PrintListReversingly<T> {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         PrintListReversingly p = new PrintListReversingly();
-        p.printListReversingly_V2(listNode1);
+        p.printListReversingly(listNode1);
     }
 }
 

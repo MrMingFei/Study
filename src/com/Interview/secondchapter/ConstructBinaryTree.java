@@ -9,7 +9,7 @@ public class ConstructBinaryTree {
         return constructCore(preOrder, 0, preOrder.length-1, inOrder, 0, inOrder.length-1);
     }
 
-    public static BinaryTreeNode constructCore(int[] preOrder, int startPreIndex, int endPreIndex,
+    private static BinaryTreeNode constructCore(int[] preOrder, int startPreIndex, int endPreIndex,
                                                int[] inOrder, int startInIndex, int endInIndex){
         if (startPreIndex > endPreIndex || startInIndex > endInIndex){
             return null;
@@ -31,6 +31,10 @@ public class ConstructBinaryTree {
         return root;
     }
 
+    /**
+     * 中序遍历打印二叉树
+     * @param node
+     */
     public void printTree(BinaryTreeNode node){
         if (node != null){
             printTree(node.leftNode);
