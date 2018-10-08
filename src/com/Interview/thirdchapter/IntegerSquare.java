@@ -7,14 +7,16 @@ public class IntegerSquare {
         }
         int absExponent = exponent;
         if (exponent < 0){
-            absExponent = ~exponent + 1;
+            //absExponent = ~exponent + 1;
+            absExponent = Math.abs(exponent);
         }
-        double result = powerWithUnsignedExponent(base, absExponent);
+        double result = powerWithUnsignedExponent_V2(base, absExponent);
         if (exponent < 0){
             result = 1.0/result;
         }
         return result;
     }
+
     /**
      * 指数非负的时候求乘方运算，连乘
      * @param base
@@ -28,6 +30,13 @@ public class IntegerSquare {
         }
         return result;
     }
+
+    /**
+     * 指数非负的时候求乘方运算，高效
+     * @param base
+     * @param absExponent
+     * @return
+     */
     private double powerWithUnsignedExponent_V2(double base, int absExponent){
         if (absExponent == 0){
             return 1.0;
@@ -41,6 +50,7 @@ public class IntegerSquare {
             result=result*base;
         return result;
     }
+
     /**
      * 浮点数由于精度问题不能用==进行判断
      * @param num1
@@ -53,8 +63,9 @@ public class IntegerSquare {
         }
         return false;
     }
+
     public static void main(String[] args){
         IntegerSquare integerSquare = new IntegerSquare();
-        System.out.println(integerSquare.power(2.0, -3));
+        System.out.println(integerSquare.power(2.0, 9));
     }
 }

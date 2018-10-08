@@ -8,7 +8,7 @@ public class MinInRotatedArray {
      */
     public static int minInRoatedArray(int[] arr){
         if (arr == null || arr.length == 0){
-            return -1;
+            throw new RuntimeException("Invalid parameters");
         }
         int leftIndex = 0;
         int rightIndex = arr.length-1;
