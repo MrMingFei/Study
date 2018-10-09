@@ -14,6 +14,7 @@ public class Print1ToMaxNDigits {
             System.out.print(i + " ");
         }
     }
+
     /**
      * 字符串来存储数字，解决大数问题
      * @param n
@@ -53,6 +54,7 @@ public class Print1ToMaxNDigits {
             print_V3_Recursely(s, n, index+1);
         }
     }
+
     /**
      * 判断是否增加
      * @param s
@@ -84,6 +86,7 @@ public class Print1ToMaxNDigits {
         }
         return isOverflow;
     }
+
     /**
      * 从非零位置开始输出
      * @param s
@@ -100,6 +103,7 @@ public class Print1ToMaxNDigits {
         }
         System.out.println();
     }
+
     public static void main(String[] args){
         print_V3(2);
     }

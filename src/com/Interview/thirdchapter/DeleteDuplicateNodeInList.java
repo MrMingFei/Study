@@ -1,6 +1,14 @@
 package com.Interview.thirdchapter;
 
 public class DeleteDuplicateNodeInList {
+    public static void main(String[] args){
+
+    }
+    /**
+     *
+     * @param pHead
+     * @return
+     */
     public ListNode deleteDuplicate(ListNode pHead){
         if (pHead == null){
             return null;
