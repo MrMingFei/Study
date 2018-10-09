@@ -2,7 +2,7 @@ package com.Interview.thirdchapter;
 
 public class Print1ToMaxNDigits {
     /**
-     * 找出最大的数字，循环输出
+     * 找出最大的数字，循环输出，不能处理大数
      * @param n
      */
     public static void print(int n){
@@ -15,7 +15,7 @@ public class Print1ToMaxNDigits {
         }
     }
     /**
-     * 字符串来存储数字
+     * 字符串来存储数字，解决大数问题
      * @param n
      */
     public static void print_V2(int n){
