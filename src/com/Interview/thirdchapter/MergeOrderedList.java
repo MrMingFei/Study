@@ -37,7 +37,8 @@ public class MergeOrderedList {
             return list1;
         ListNode tmp1 = list1;
         ListNode tmp2 = list2;
-        ListNode head = new ListNode(0);//这里不能把返回链表赋值为null，因为下一行马上就要把它赋值给另一链表，得让它在内存里有位置才行
+        //这里不能把返回链表赋值为null，因为下一行马上就要把它赋值给另一链表，得让它在内存里有位置才行
+        ListNode head = new ListNode(0);
         ListNode headptr = head;
         while(tmp1 != null && tmp2!=null){
 
