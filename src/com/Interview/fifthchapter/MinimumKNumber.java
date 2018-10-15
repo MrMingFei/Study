@@ -1,7 +1,7 @@
 package com.Interview.fifthchapter;
 
-import com.dailyaccumulation.sortmethod.HeapSort;
-import com.dailyaccumulation.sortmethod.QuickSort;
+import com.dailyaccumulation.sortandfind.sortmethod.HeapSort;
+import com.dailyaccumulation.sortandfind.sortmethod.QuickSort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

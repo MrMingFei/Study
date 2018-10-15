@@ -1,6 +1,6 @@
 package com.Interview.fifthchapter;
 
-import com.dailyaccumulation.sortmethod.QuickSort;
+import com.dailyaccumulation.sortandfind.sortmethod.QuickSort;
 
 public class MoreThanHalfInArray {
     private boolean inputInvalid = false;

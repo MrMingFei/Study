@@ -13,6 +13,10 @@ public class MedianInDataStream {
     });
     int count = 0;
 
+    /**
+     * 将数据流中的内容插入
+     * @param num
+     */
     public void insert(int num){
         count++;
         if ((count&1) == 0){
@@ -29,6 +33,11 @@ public class MedianInDataStream {
             maxQueue.offer(num);
         }
     }
+
+    /**
+     * 得到中位数
+     * @return
+     */
     public double getMedian(){
         if ((count&1) == 0)
             return ((double)(maxQueue.peek() + minQueue.peek()))/2;

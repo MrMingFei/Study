@@ -1,4 +1,4 @@
-package com.dailyaccumulation.sortmethod;
+package com.dailyaccumulation.sortandfind.sortmethod;
 
 import java.util.Arrays;
 

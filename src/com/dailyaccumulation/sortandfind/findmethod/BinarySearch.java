@@ -1,4 +1,4 @@
-package com.dailyaccumulation.findmethod;
+package com.dailyaccumulation.sortandfind.findmethod;
 
 public class BinarySearch {
     /**

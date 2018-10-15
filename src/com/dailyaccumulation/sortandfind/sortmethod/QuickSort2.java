@@ -1,7 +1,6 @@
-package com.dailyaccumulation.sortmethod;
+package com.dailyaccumulation.sortandfind.sortmethod;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class QuickSort2 {
     public static void sort(int[] arr, int startIndex, int endIndex){

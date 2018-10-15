@@ -3,6 +3,11 @@ package com.Interview.fifthchapter;
 public class LargestSumOfSubarrays {
     private boolean isInvalidInput = false;
 
+    /**
+     * 求连续子数组的最大和
+     * @param arr
+     * @return
+     */
     public int findLargestSum(int[] arr){
         if (arr == null || arr.length <= 0){
             isInvalidInput = true;
