@@ -20,6 +20,7 @@ public class PathValueInBinaryTree {
             for (int val : path){
                 System.out.print(val + " ");
             }
+            System.out.println();
         }
         if (root.leftNode != null)
             findPath(root.leftNode, expectedSum, path, currentSum);
@@ -42,6 +43,6 @@ public class PathValueInBinaryTree {
         treeNode2.leftNode = treeNode4;
         treeNode2.rightNode = treeNode5;
         treeNode3.leftNode = treeNode6;
-        findPath(treeNode1, 8);
+        findPath(treeNode1, 10);
     }
 }
