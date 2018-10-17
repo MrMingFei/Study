@@ -9,7 +9,8 @@ public class firstNoRepeatChar {
         firstNoRepeatChar fnrc = new firstNoRepeatChar();
         ArrayList<String> list=new ArrayList<String>();
         Set<String> set = new HashSet<String>();
-        String str = "abbcddr";
+        String str = "We are Student";
+        String str1 = "aeiou";
         for (int i = 0; i < 10; i++) {
             list.add(""+i);
         }
@@ -20,6 +21,7 @@ public class firstNoRepeatChar {
         String[] array1 = set.toArray(new String[set.size()]);
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array1));
+        fnrc.deleteChars(str, str1);
     }
 
     private int[] hashTable = new int[256];
@@ -32,7 +34,7 @@ public class firstNoRepeatChar {
     public char getChar(String str){
         if (str.length() == 0 || str.equals(""))
             return '0';
-        int[] arr = new int[256];
+        int[] arr = new int[26];
         int len = str.length();
         //防止出现大小写混乱的情况，ASCII码中大小写是不同的
         str = str.toLowerCase();
@@ -99,7 +101,7 @@ public class firstNoRepeatChar {
     }
 
     /**
-     * 使用一个boolean型的数组
+     * 使用一个boolean型的数组去重
      * @param str
      */
     public void removeRepeatChars(String str){
