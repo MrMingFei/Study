@@ -9,6 +9,9 @@ public class MergeSort {
         System.out.println(Arrays.toString(arr));
     }
     public static void sort(int[] arr){
+        if (arr == null || arr.length == 0)
+            return;
+
         int[] temp = new int[arr.length];
         sort(arr, 0, arr.length-1, temp);
     }

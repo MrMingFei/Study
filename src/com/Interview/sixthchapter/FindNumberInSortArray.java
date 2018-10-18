@@ -98,6 +98,7 @@ public class FindNumberInSortArray {
                 left = middle + 1;
             }
         }
+        //0和N比较特殊，单独处理一下
         if (left == len)
             return len;
         //无效的输入，比如不是按要求排序数组，或者数字不在0~n-1的范围之内
