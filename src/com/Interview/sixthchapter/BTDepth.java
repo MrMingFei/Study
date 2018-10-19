@@ -41,7 +41,7 @@ public class BTDepth {
     }
 
     /**
-     * 判断是否为平衡二叉树
+     * 判断是否为平衡二叉树，节点会被重复便利，效率不高
      * @param root
      * @return
      */
