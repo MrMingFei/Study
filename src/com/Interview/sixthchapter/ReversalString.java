@@ -2,9 +2,9 @@ package com.Interview.sixthchapter;
 
 public class ReversalString {
     public static void main(String[] args){
-        String str = "Student";
+        String str = "student.";
         ReversalString rs = new ReversalString();
-        System.out.println(rs.leftRotateString(str, 2));
+        System.out.println(rs.leftRotateString(str, 3));
     }
 
     /**
@@ -14,6 +14,7 @@ public class ReversalString {
      * @return
      */
     public String leftRotateString(String str, int n){
+        //当n大于str的长度时，可以用取余确定旋转的位数，当n是负数时当作右旋转处理
         if (str == null || str.length() < 2 || str.length() <= n){
             return str;
         }

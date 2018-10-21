@@ -19,7 +19,7 @@ public class QueueMaximum {
      */
     public ArrayList<Integer> maxInWindows(int[] num, int size){
         ArrayList<Integer> ret = new ArrayList<Integer>();
-        if (size == 0 || num == null || num.length < size)
+        if (size <= 0 || num == null || num.length < size)
             return ret;
 
         LinkedList<Integer> indexDeque = new LinkedList<>();
@@ -51,7 +51,7 @@ public class QueueMaximum {
      */
     public ArrayList<Integer> maxInWindows_V2(int[] num, int size){
         ArrayList<Integer> list = new ArrayList<Integer>();
-        if (num == null || size <= 0)
+        if (num == null || size <= 0 || num.length < size)
             return list;
         int i = 0;
         int j = size - 1;

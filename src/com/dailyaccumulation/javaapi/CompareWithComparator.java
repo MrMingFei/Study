@@ -17,9 +17,9 @@ public class CompareWithComparator {
             @Override
             public int compare(User o1, User o2) {
                 if (o1.getAge() == o2.getAge())
-                    return o1.getUserId() - o2.getUserId();
+                    return o2.getUserId() - o1.getUserId();
                 else
-                    return o1.getAge() - o2.getAge();
+                    return o2.getAge() - o1.getAge();
             }
         });
 
