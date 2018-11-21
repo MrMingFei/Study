@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class CountSort {
     public static void main(String[] args){
         //int[] arr = {4, 4, 6, 6, 5, 3, 2, 8, 1, 7, 5, 6 ,0, 10};
-        int[] arr = {95, 94, 91, 98, 99, 90, 99, 93, 91, 92};
+        int[] arr = {95, 95, 91, 98, 99, 90, 93, 92};
         CountSort cs = new CountSort();
         int[] sortArr = cs.countSort(arr, arr.length);
         System.out.println(Arrays.toString(sortArr));
