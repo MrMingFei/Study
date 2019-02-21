@@ -1,9 +1,11 @@
 package com.Interview.fifthchapter;
 
 public class ANumberInDigitSequence {
+
     public static void main(String[] args){
         System.out.print(digitAtIndex(15));
     }
+
     public static int digitAtIndex(int index){
         if (index < 0)
             return -1;
@@ -19,6 +21,7 @@ public class ANumberInDigitSequence {
             }
         }
     }
+
     private static int digitAtIndex(int index, int digits){
         int number = beginNumber(digits) + index/digits;
         int indexFromRirht = digits - index%digits;
@@ -27,6 +30,7 @@ public class ANumberInDigitSequence {
         }
         return number%10;
     }
+
     /**
      * digits位数的数字个数
      * @param digits

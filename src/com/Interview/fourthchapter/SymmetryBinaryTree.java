@@ -4,6 +4,7 @@ public class SymmetryBinaryTree {
     public static boolean isSymmetrical(BinaryTreeNode pRoot){
         return isSymmetrical(pRoot, pRoot);
     }
+
     public static boolean isSymmetrical(BinaryTreeNode pRoot1, BinaryTreeNode pRoot2){
         if (pRoot1 == null && pRoot2 == null)
             return true;

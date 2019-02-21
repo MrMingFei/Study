@@ -16,10 +16,11 @@ public class SubstructureOfTree {
         }
         return result;
     }
+
     public boolean doesTree1HaveTree2(BinaryTreeNode root1, BinaryTreeNode root2){
         if (root2 == null)
             return true;
-        if (root2 == null)
+        if (root1 == null)
             return false;
         if (!equals(root1.value, root2.value))
             return false;

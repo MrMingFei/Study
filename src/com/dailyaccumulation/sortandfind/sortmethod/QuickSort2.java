@@ -35,9 +35,11 @@ public class QuickSort2 {
         sort(arr, startIndex, i-1);
         sort(arr, i+1, endIndex);
     }
+
     public static void quickSort(int[] arr){
         sort(arr, 0, arr.length-1);
     }
+
     public static void main(String[] args){
         int[] arr = new int[]{4, 6, 7, 5, 2, 3, 8, 1};
         quickSort(arr);

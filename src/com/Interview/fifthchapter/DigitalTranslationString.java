@@ -4,11 +4,13 @@ public class DigitalTranslationString {
     public static void main(String[] args){
         System.out.println(getTranslationCount(11258));
     }
+
     public static int getTranslationCount(int number){
         if (number < 0)
             return 0;
         return translationCount(String.valueOf(number));
     }
+
     public static int translationCount(String number){
         int len = number.length();
         int[] countRecords = new int[len];

@@ -55,6 +55,7 @@ public class ArrangementOfString {
         list.remove((Character)str[begin]);
         combine(str, begin+1, number, list);
     }
+
     public static void main(String[] args){
         String str;
         Scanner scan = new Scanner(System.in);

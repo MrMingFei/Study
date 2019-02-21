@@ -25,9 +25,10 @@ public class TwoDimensionalArray {
         }
         return found;
     }
+
     public static void main(String[] args){
-        int[][] matrix = {{1, 2, 8, 9},{2, 4, 9, 12},{4, 7, 10, 13}};//,{6, 8, 11, 15}
-        boolean result = find(matrix, 3, 4, 12);
+        int[][] matrix = {{1, 2, 8, 9},{2, 4, 9, 12},{3, 7, 10, 13}};//,{6, 8, 11, 15}
+        boolean result = find(matrix, 3, 4, 3);
         System.out.println(result);
         System.out.println(matrix.length);
         System.out.println(matrix[0].length);

@@ -57,11 +57,11 @@ public class UglyNumber {
         for (int i = 1; i < index; i++){
             int min = min(uglyArray[multiply2]*2, uglyArray[multiply3]*3, uglyArray[multiply5]*5);
             uglyArray[i] = min;
-            while (uglyArray[multiply2]*2 == uglyArray[i])
+            while (uglyArray[multiply2]*2 <= uglyArray[i])
                 multiply2++;
-            while (uglyArray[multiply3]*3 == uglyArray[i])
+            while (uglyArray[multiply3]*3 <= uglyArray[i])
                 multiply3++;
-            while (uglyArray[multiply5]*5 == uglyArray[i])
+            while (uglyArray[multiply5]*5 <= uglyArray[i])
                 multiply5++;
         }
         return uglyArray[index-1];

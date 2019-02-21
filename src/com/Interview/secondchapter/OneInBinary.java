@@ -25,7 +25,7 @@ public class OneInBinary {
     public int numberOfOne_V2(int n){
         int count = 0;
         int flag = 1;
-        while (flag <= 2*n){
+        while (flag <= n){
             if ((n&flag) != 0){
                 count++;
             }

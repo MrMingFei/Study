@@ -49,7 +49,8 @@ public class SerializationBT {
         Queue<String> queue = new LinkedList<String>(Arrays.asList(strs));
         return preOrder(queue);
     }
-    public BinaryTreeNode preOrder(Queue<String> queue){
+
+    private BinaryTreeNode preOrder(Queue<String> queue){
         String val = queue.poll();
         if (val.equals("$"))
             return null;

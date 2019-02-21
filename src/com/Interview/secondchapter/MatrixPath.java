@@ -16,6 +16,7 @@ public class MatrixPath {
         }
         return false;
     }
+
     public boolean hasPathCore(char[] matrix, int rows, int cols, int row, int col, char[] str, int pathLength, boolean[] visit){
         if (pathLength == str.length){
             return true;

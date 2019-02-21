@@ -7,7 +7,7 @@ public class ReplaceSpace {
      * @return
      */
     public static String replaceSpace(char[] string){
-        if (string.length < 0 || string == null){
+        if (string.length <= 0 || string == null){
             return null;
         }
         int originalLength = string.length;
@@ -21,7 +21,7 @@ public class ReplaceSpace {
         char[] temp = new char[newLength];
         int indexOfOriginal = originalLength-1;
         int indexOfNew = newLength-1;
-        while (indexOfOriginal >= 0 && indexOfOriginal < originalLength){
+        while (indexOfOriginal >= 0 && indexOfOriginal <= indexOfNew){
             if (string[indexOfOriginal] == ' '){
                 temp[indexOfNew--] = '0';
                 temp[indexOfNew--] = '2';

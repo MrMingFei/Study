@@ -62,7 +62,7 @@ public class RobotMovingRange {
 
     public static void main(String[] args){
         RobotMovingRange movingRange = new RobotMovingRange();
-        int count = movingRange.movingCount(3, 3, 3);
+        int count = movingRange.movingCount(2, 3, 3);
         System.out.println(count);
     }
 }

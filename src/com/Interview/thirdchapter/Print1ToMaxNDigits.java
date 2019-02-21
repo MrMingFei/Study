@@ -31,6 +31,7 @@ public class Print1ToMaxNDigits {
             PrintNumber(number);
         }
     }
+
     public static void print_V3(int n){
         if (n < 0){
             return;
@@ -44,6 +45,7 @@ public class Print1ToMaxNDigits {
             print_V3_Recursely(s, n, 0);
         }
     }
+
     public static void print_V3_Recursely(StringBuffer s, int n, int index){
         if (index == n-1){
             PrintNumber(s);

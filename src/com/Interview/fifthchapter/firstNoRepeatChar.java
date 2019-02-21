@@ -5,6 +5,7 @@ import com.sun.deploy.util.StringUtils;
 import java.util.*;
 
 public class firstNoRepeatChar {
+
     public static void main(String[] args){
         firstNoRepeatChar fnrc = new firstNoRepeatChar();
         ArrayList<String> list=new ArrayList<String>();
@@ -26,6 +27,7 @@ public class firstNoRepeatChar {
 
     private int[] hashTable = new int[256];
     private StringBuffer buffer = new StringBuffer();
+
     /**
      * 借助数组实现哈希表
      * @param str

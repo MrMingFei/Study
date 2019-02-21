@@ -35,6 +35,7 @@ public class PostOrderTraversalBST {
             right = verifySequenceOfBST(sequence, i, end-1);
         return left&&right;
     }
+
     public static boolean verifySequenceOfBST_V2(int[] sequence, int start, int end){
         if (start >= end)
             return true;

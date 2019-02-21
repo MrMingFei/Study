@@ -8,6 +8,7 @@ public class MergeSort {
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
+
     public static void sort(int[] arr){
         if (arr == null || arr.length == 0)
             return;
@@ -15,6 +16,7 @@ public class MergeSort {
         int[] temp = new int[arr.length];
         sort(arr, 0, arr.length-1, temp);
     }
+
     private static void sort(int[] arr, int left, int right, int[] temp){
         if (left < right){
             int middle = (left + right)/2;
@@ -23,6 +25,7 @@ public class MergeSort {
             merge(arr, left, middle, right, temp);
         }
     }
+
     private static void merge(int[] arr, int left,int middle, int right, int[] temp){
         int i = left;
         int j = middle+1;

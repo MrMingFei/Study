@@ -30,6 +30,7 @@ public class MinInRotatedArray {
         }
         return arr[midIndex];
     }
+
     /**
      * 特殊情况循环返回最小值
      * @param arr

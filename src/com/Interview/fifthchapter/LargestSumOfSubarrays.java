@@ -1,6 +1,7 @@
 package com.Interview.fifthchapter;
 
 public class LargestSumOfSubarrays {
+
     private boolean isInvalidInput = false;
 
     /**
@@ -16,11 +17,12 @@ public class LargestSumOfSubarrays {
         int sumMax = arr[0];
         int currentMax = arr[0];
 
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 1; i < arr.length; i++){
             if (currentMax < 0)
                 currentMax = arr[i];
             else
-                currentMax = sumMax + arr[i];
+                currentMax += arr[i];
+
             if (currentMax > sumMax)
                 sumMax = currentMax;
         }

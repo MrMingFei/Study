@@ -20,6 +20,7 @@ public class BinarySearch {
         else
             return arr[middle];
     }
+
     public int commonBinarySearch(int[] arr, int num){
         int low = 0;
         int high = arr.length - 1;

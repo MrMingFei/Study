@@ -8,6 +8,7 @@ public class NumberOfOccurrences {
         }
         return count;
     }
+
     public int numberOf1(int n){
         int count = 0;
         while (n != 0){

@@ -19,6 +19,7 @@ public class ArraysArrangeSmallestNumber {
         ArraysArrangeSmallestNumber aa = new ArraysArrangeSmallestNumber();
         System.out.println("最小的数字组合是：" + aa.printMinNumber(arr));
     }
+
     public String printMinNumber(int[] number){
         int len = number.length;
         if (number == null || len == 0)

@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MedianInDataStream {
+
     private PriorityQueue<Integer> minQueue = new PriorityQueue<Integer>();
     private PriorityQueue<Integer> maxQueue = new PriorityQueue<Integer>(15, new Comparator<Integer>() {
         @Override
@@ -11,6 +12,7 @@ public class MedianInDataStream {
             return o2 - o1;
         }
     });
+
     int count = 0;
 
     /**

@@ -9,6 +9,7 @@ public class BSTConvertDLL {
         }
         return node;
     }
+
     public void convert(BinaryTreeNode root, BinaryTreeNode lastNode){
         if (root == null)
             return;

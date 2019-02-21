@@ -1,9 +1,11 @@
 package com.Interview.fifthchapter;
 
 public class MaxNoRepeatString {
+
     public static void main(String[] args){
         System.out.println(longestSubstringWithoutRepeat("arabcacfr"));
     }
+
     /**
      * 寻找最长不含重复字符的字符串
      * @param str
@@ -23,6 +25,7 @@ public class MaxNoRepeatString {
             int preIndex = positions[str.charAt(i)-'a'];
             //当前字符与它上次出现位置之间的距离
             int distance = i-preIndex;
+            //preIndex表示该字符之前未出现过
             if (preIndex < 0 || distance > curLength)
                 curLength++;
             else {

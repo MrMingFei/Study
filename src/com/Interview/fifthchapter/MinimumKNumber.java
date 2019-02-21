@@ -35,6 +35,7 @@ public class MinimumKNumber {
         }
         return list;
     }
+
     public void getMinimumKNumber_V2(int[] input, int k, int len){
         if (input == null || k <= 0 || len <= 0 || k > len)
             return;

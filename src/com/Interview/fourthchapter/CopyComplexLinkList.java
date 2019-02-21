@@ -3,6 +3,7 @@ package com.Interview.fourthchapter;
 import java.util.HashMap;
 
 public class CopyComplexLinkList {
+
     /**
      * 复杂链表的复制，以空间换时间
      * @param head
@@ -99,14 +100,16 @@ public class CopyComplexLinkList {
             node.next = cloneNode.next;
             node = node.next;
         }
-        return cloneNode;
+        return cloneHead;
     }
 }
+
 class ComplexListNode{
     public int value;
     ComplexListNode next = null;
     ComplexListNode sibling = null;
     public ComplexListNode(){ }
+
     public ComplexListNode(int value){
         super();
         this.value = value;

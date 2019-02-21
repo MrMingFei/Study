@@ -15,15 +15,16 @@ public class checkDuplicate {
             System.out.println("Not duplicate characters");
         }
     }
+
     private boolean checkDuplicateChar(String str){
         int[] a = new int [256];
-        int len = str.length(), i;
+        int len = str.length();
         char[] elements = str.toCharArray();
         if (len > 256)
         {
             return true;
         }
-        for (i = 0; i < len; i++)
+        for (int i = 0; i < len; i++)
         {
             int x = elements[i];
             a[x] ++;

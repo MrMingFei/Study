@@ -92,6 +92,7 @@ public class MoreThanHalfInArray {
         }
         return isMoreThanHalf;
     }
+
     public static void main(String[] args){
         int[] arr = {1, 2, 3, 2, 2, 2, 5, 4, 2};
         MoreThanHalfInArray mt = new MoreThanHalfInArray();
