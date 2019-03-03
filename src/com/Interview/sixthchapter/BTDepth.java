@@ -34,6 +34,7 @@ public class BTDepth {
 
         return (left > right) ? (left + 1) : (right + 1);
     }
+
     public int treeDepth_V2(BinaryTreeNode root){
         if (root == null)
             return 0;
@@ -63,6 +64,7 @@ public class BTDepth {
         getDepth(root);
         return isBalanced;
     }
+
     public int getDepth(BinaryTreeNode root){
         if (root == null)
             return 0;

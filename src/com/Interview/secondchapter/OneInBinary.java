@@ -33,6 +33,7 @@ public class OneInBinary {
         }
         return count;
     }
+
     public int numberOfOne_V3(int n){
         int count = 0;
         while (n != 0){

@@ -107,6 +107,6 @@ public class Print1ToMaxNDigits {
     }
 
     public static void main(String[] args){
-        print_V3(2);
+        print_V2(2);
     }
 }

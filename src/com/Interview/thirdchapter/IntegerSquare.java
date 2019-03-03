@@ -1,6 +1,7 @@
 package com.Interview.thirdchapter;
 
 public class IntegerSquare {
+
     public double power(double base, int exponent){
         if (equal(base, 0.0) && exponent < 0){
             throw new RuntimeException("while exponent is minus,the base can't be zero");

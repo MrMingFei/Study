@@ -3,7 +3,7 @@ package com.Interview.fifthchapter;
 public class UglyNumber {
     public static void main(String[] args){
         UglyNumber un = new UglyNumber();
-        System.out.println(un.getUglyNumber_V2(300));
+        System.out.println(un.getUglyNumber(10));
     }
 
     /**

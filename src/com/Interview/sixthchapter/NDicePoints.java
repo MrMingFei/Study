@@ -4,7 +4,7 @@ public class NDicePoints {
     private static final int g_maxValue = 6;
 
     public static void main(String[] args){
-        printProbability_V2(2);
+        printProbability(2);
     }
 
     /**

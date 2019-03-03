@@ -1,5 +1,7 @@
 package com.Interview.fifthchapter;
 
+import java.util.Arrays;
+
 public class ReverseOrderInArray {
 
     public static void main(String[] args){
@@ -22,6 +24,11 @@ public class ReverseOrderInArray {
         for (int i = 0; i < len; i++){
             copy[i] = arr[i];
         }
+        /* 便捷复制数组的方法
+        copy = Arrays.copyOf(arr, arr.length);
+        copy = Arrays.copyOfRange(arr, 0, arr.length);
+        System.arraycopy(arr, 0, copy, 0, arr.length);
+        */
 
         int count = inversePairsCore(arr, copy, 0, len-1);
 
@@ -60,10 +67,10 @@ public class ReverseOrderInArray {
             }
         }
         for (; i >= start; i--){
-            copy[indexCopy--] = arr[i];
+            copy[indexCopy--] = arr[i--];
         }
         for (; j >= mid + 1; j--){
-            copy[indexCopy--] = arr[j];
+            copy[indexCopy--] = arr[j--];
         }
         return left + right + count;
     }

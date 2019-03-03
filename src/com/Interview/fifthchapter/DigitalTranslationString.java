@@ -1,6 +1,7 @@
 package com.Interview.fifthchapter;
 
 public class DigitalTranslationString {
+
     public static void main(String[] args){
         System.out.println(getTranslationCount(11258));
     }

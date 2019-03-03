@@ -62,6 +62,6 @@ public class CutRope {
     }
     public static void main(String[] args){
         CutRope cutRope = new CutRope();
-        System.out.println(cutRope.maxProductWithGreedy(7));
+        System.out.println(cutRope.maxProductAfterCut(6));
     }
 }

@@ -1,6 +1,12 @@
 package com.Interview.fifthchapter;
 
 public class NumberOfOccurrences {
+
+    /**
+     * 1~N整数中1的出现的次数
+     * @param n
+     * @return
+     */
     public int numberOfOccurrences(int n){
         int count = 0;
         for (int i = 0; i <= n; i++){

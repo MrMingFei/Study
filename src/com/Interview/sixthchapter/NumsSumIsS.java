@@ -9,6 +9,7 @@ public class NumsSumIsS {
         NumsSumIsS sum = new NumsSumIsS();
         sum.findSequenceIsS(15);
     }
+
     /**
      * 求和为S的两个数字
      * @param arr
@@ -63,6 +64,7 @@ public class NumsSumIsS {
             currentSum += big;
         }
     }
+
     public void printSequence(int small, int big){
         for (int i = small; i <= big; i++){
             System.out.print(i + " ");

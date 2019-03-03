@@ -3,7 +3,7 @@ package com.Interview.fifthchapter;
 public class ANumberInDigitSequence {
 
     public static void main(String[] args){
-        System.out.print(digitAtIndex(15));
+        System.out.print(digitAtIndex(9));
     }
 
     public static int digitAtIndex(int index){

@@ -83,6 +83,7 @@ public class TimesInArray {
         }
 
         int result = 0;
+        //这时候是从最高位开始求result的
         for (int i = 0; i < 32; i++){
             result = result << 1;
             result += bitSum[i]%3;

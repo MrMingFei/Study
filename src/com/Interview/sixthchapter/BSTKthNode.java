@@ -49,6 +49,7 @@ class Temp {
         this.val = val;
     }
 }
+
 class BinaryTreeNode{
     public int data;
     public BinaryTreeNode leftNode;
