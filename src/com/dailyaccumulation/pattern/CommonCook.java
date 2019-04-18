@@ -35,7 +35,6 @@ public class CommonCook {
             System.out.println("第一步：快递送到");
             chuju = new Chuju();
         }
-
     }
 
     //  用厨具烹饪食材
