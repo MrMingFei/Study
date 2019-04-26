@@ -23,6 +23,7 @@ public class RobotMovingRange {
         int count = 0;
         if (check(threshold, rows, cols, row, col, visit)){
             visit[row*cols + col] = true;
+            //这里row、col做减法好像没有必要
             count = 1 + movingCountCore(threshold, rows, cols, row+1, col, visit)
                       + movingCountCore(threshold, rows, cols, row-1, col, visit)
                       + movingCountCore(threshold, rows, cols, row, col+1, visit)
