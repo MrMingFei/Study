@@ -1,18 +1,12 @@
 package com.Interview;
 
-import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Test {
-    public static void main(String[] args){
-        String line = "This order was placed for QT3000! OK?";
-        String pattern = "(\\D*)(\\d+)(.*)";
+}
 
-        Pattern r = Pattern.compile(pattern);
-        Matcher m = r.matcher(line);
-
-        System.out.println(m.groupCount());
+class Kth{
+    int value;
+    public Kth(int value){
+        this.value = value;
     }
 }
 
@@ -35,5 +29,17 @@ class LinkNode{
     public LinkNode(int value){
         this.value = value;
         this.next = null;
+    }
+}
+
+class ComplexListNode{
+    public int value;
+    ComplexListNode next = null;
+    ComplexListNode sibling = null;
+    public ComplexListNode(){ }
+
+    public ComplexListNode(int value){
+        super();
+        this.value = value;
     }
 }
