@@ -6,8 +6,9 @@ public class MysqlDemo {
 
     public static void main(String[] args) throws Exception {
         Connection conn = null;
-        String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/world";
+        String driver = "com.mysql.cj.jdbc.Driver";
+        //serverTimezoned的参数可选，例如GMT
+        String url = "jdbc:mysql://localhost:3306/world?useSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC";
         String user = "root";
         String password = "271828";
 
@@ -24,7 +25,7 @@ public class MysqlDemo {
             //创建statement类对象，用来执行sql语句
             Statement statement = conn.createStatement();
             //要执行的sql语句
-            String sql = "select * from dic_university where id = '1'";
+            String sql = "select * from city c where c.ID = 1";
             //ResultSet类，用来存放获取的结果集
             ResultSet rs = statement.executeQuery(sql);
             System.out.println("-----------------");
