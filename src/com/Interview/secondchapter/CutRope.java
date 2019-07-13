@@ -25,6 +25,7 @@ public class CutRope {
 
         int max = 0;
         for (int i = 4; i <= len; i++){
+            max = 0;
             for (int j = 1; j <= i/2; j++){
                 int tempResult = result[j]*result[i-j];
                 if (max < tempResult){
