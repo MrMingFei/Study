@@ -53,4 +53,34 @@ public class ANumberInDigitSequence {
             return 0;
         return (int)Math.pow(10, digits-1);
     }
+
+    /**
+     * 逐一枚举
+     * @param index
+     * @return
+     */
+    public static int digitAtIndex_V2(int index){
+        int currentIndex = 0;
+        int number = 0;
+        int temp;
+        while (currentIndex < index){
+            number++;
+            temp = CalculationDigits(number);
+            currentIndex += temp;
+        }
+
+        for (int i = 0; i < (currentIndex - index); i++){
+            number /= 10;
+        }
+        return number%10;
+    }
+
+    public static int CalculationDigits(int number){
+        int digits = 0;
+        while (number > 0){
+            digits++;
+            number /= 10;
+        }
+        return digits;
+    }
 }

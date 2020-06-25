@@ -60,6 +60,7 @@ public class BTDepth {
 
         return isBalancedBT(root.leftNode) && isBalancedBT(root.rightNode);
     }
+
     public boolean isBalancedBT_V2(BinaryTreeNode root){
         getDepth(root);
         return isBalanced;

@@ -28,7 +28,7 @@ public class PostOrderTraversalBST {
             j++;
         }
         boolean left = true;
-        if (i > 0)
+        if (i > start)
             left = verifySequenceOfBST(sequence, start, i-1);
         boolean right = true;
         if (j < end)

@@ -28,7 +28,7 @@ public class BinarySearch {
 
         if (num < arr[low] || num > arr[high] || low > high)
             return -1;
-        while (low < high){
+        while (low <= high){
             middle = (low + high)/2;
             if (arr[middle] > num)
                 high = middle - 1;

@@ -1,6 +1,18 @@
 package com.Interview;
 
-public class Test {
+import java.lang.reflect.Constructor;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Random;
+
+public class TestHH {
+
+    public static void main(String[] args) throws Exception{
+
+
+        System.out.println(5^3);
+    }
 }
 
 class Kth{
@@ -14,11 +26,13 @@ class BinaryTreeNode{
     int value;
     BinaryTreeNode left;
     BinaryTreeNode right;
+    BinaryTreeNode parent;
     public BinaryTreeNode(){}
     public BinaryTreeNode(int value){
         this.value = value;
         this.left = null;
         this.right = null;
+        this.parent = null;
     }
 }
 
