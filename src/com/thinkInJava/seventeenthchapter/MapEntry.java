@@ -1,4 +1,4 @@
-package com.dailyaccumulation.datastructure;
+package com.thinkInJava.seventeenthchapter;
 
 import java.util.Map;
 

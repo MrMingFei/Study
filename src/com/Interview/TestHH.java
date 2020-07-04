@@ -1,17 +1,11 @@
 package com.Interview;
 
-import java.lang.reflect.Constructor;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Random;
+import javax.swing.text.Document;
 
 public class TestHH {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) {
 
-
-        System.out.println(5^3);
     }
 }
 

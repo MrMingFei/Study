@@ -1,6 +1,4 @@
-package com.dailyaccumulation.datastructure;
-
-import com.thinkInJava.fourthchapter.pets.Individual;
+package com.thinkInJava.seventeenthchapter;
 
 import java.util.*;
 
