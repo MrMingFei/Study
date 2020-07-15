@@ -4,9 +4,17 @@ package com.Interview;
 public class TestHH {
 
     public static void main(String[] args) {
+        new Thread(){
 
+            @Override
+            public void run() {
+
+                System.out.println("acquired");
+            }
+        }.start();
     }
 }
+
 
 class Kth{
     int value;

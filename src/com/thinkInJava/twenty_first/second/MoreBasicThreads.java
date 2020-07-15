@@ -1,4 +1,4 @@
-package com.thinkInJava.twenty_second;
+package com.thinkInJava.twenty_first.second;
 
 import static net.mindview.util.Print.*;
 
