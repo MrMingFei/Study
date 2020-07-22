@@ -20,6 +20,7 @@ public class GreenhouseControls extends Controller {
             return "Light is on";
         }
     }
+
     public class LightOff extends Event{
         public LightOff(long delayTime){
             super(delayTime);
@@ -52,6 +53,7 @@ public class GreenhouseControls extends Controller {
             return "Greenhouse water is on";
         }
     }
+
     public class WaterOff extends Event{
         public WaterOff(long delayTime){
             super(delayTime);
@@ -84,6 +86,7 @@ public class GreenhouseControls extends Controller {
             return "Thermostat on night setting";
         }
     }
+
     public class ThermostatDay extends Event{
         public ThermostatDay(long delayTime){
             super(delayTime);
@@ -115,6 +118,7 @@ public class GreenhouseControls extends Controller {
             return "Bing!";
         }
     }
+
     public class Restart extends Event{
         private Event[] eventList;
         public Restart(long delayTime, Event[] eventList){
@@ -140,6 +144,7 @@ public class GreenhouseControls extends Controller {
             return "Restarting system";
         }
     }
+
     public static class Terminate extends Event{
         public Terminate(long delayTime){
             super(delayTime);
