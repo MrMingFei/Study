@@ -34,6 +34,11 @@ public class OneInBinary {
         return count;
     }
 
+    /**
+     * 当n为负数的时候，前两种方法并不可靠
+     * @param n
+     * @return
+     */
     public int numberOfOne_V3(int n){
         int count = 0;
         while (n != 0){

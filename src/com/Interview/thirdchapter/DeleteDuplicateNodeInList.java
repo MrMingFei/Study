@@ -18,6 +18,7 @@ public class DeleteDuplicateNodeInList {
         listNode4.next = listNode5;
         listNode5.next = listNode6;
         listNode6.next = listNode7;
+        listNode7.next = listNode8;
 
         ListNode temp = deleteDuplicate(listNode1);
         while (temp != null){
@@ -43,8 +44,7 @@ public class DeleteDuplicateNodeInList {
         while (p != null && p.next != null){
             if (p.data == p.next.data){
                 int data = p.data;
-                //加上这两行，可以保留一个重复字节
-                //last.next = p;
+                //加上这一行，可以保留一个重复字节
                 //last = p;
                 while (p != null && p.data == data){
                     p = p.next;

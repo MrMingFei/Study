@@ -24,4 +24,27 @@ public class NumberOfOccurrences {
         }
         return count;
     }
+
+    /**
+     * 更高效的方法
+     * @param n
+     * @return
+     */
+    public int numberOfOccurrences_V2(int n){
+        int count = 0;
+        int high, current, low;
+        for (int i = 1; i <= n; i *= 10){
+            high = n/(i*10);
+            current = (n/i)%10;
+            low = n%i;
+            if (current == 0){
+                count += high*i;
+            }else if (current == 1){
+                count += high*i + low + 1;
+            }else {
+                count += (high+1)*i;
+            }
+        }
+        return count;
+    }
 }

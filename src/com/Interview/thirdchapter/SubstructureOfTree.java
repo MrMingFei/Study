@@ -30,9 +30,9 @@ public class SubstructureOfTree {
                 result = doesTree1HaveTree2(root1, root2);
             }
             if (!result)
-                hasSubTree(root1.leftNode, root2);
+                result = hasSubTree(root1.leftNode, root2);
             if (!result)
-                hasSubTree(root1.rightNode, root2);
+                result = hasSubTree(root1.rightNode, root2);
         }
         return result;
     }

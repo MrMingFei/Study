@@ -7,71 +7,61 @@ public class ReverseOrderInArray {
     public static void main(String[] args){
         int[] arr = {7, 5, 6, 4};
         ReverseOrderInArray roi = new ReverseOrderInArray();
-        System.out.println(roi.inversePairs(arr, arr.length));
+        System.out.println(roi.InversePairs(arr));
     }
 
+    private int count;
     /**
      * 求数组中的逆序对
-     * @param arr
-     * @param len
+     * @param array
      * @return
      */
-    public int inversePairs(int[] arr, int len){
-        if (arr == null || arr.length == 0)
+    public int InversePairs(int[] array) {
+        if (array == null || array.length <= 0){
             return 0;
-
-        int[] copy = new int[len];
-        for (int i = 0; i < len; i++){
-            copy[i] = arr[i];
         }
-        /* 便捷复制数组的方法
-        copy = Arrays.copyOf(arr, arr.length);
-        copy = Arrays.copyOfRange(arr, 0, arr.length);
-        System.arraycopy(arr, 0, copy, 0, arr.length);
-        */
-
-        int count = inversePairsCore(arr, copy, 0, len-1);
-
+        int[] temp = new int[array.length];
+        split(array, 0, array.length-1, temp);
         return count;
     }
 
     /**
      * 求数组中的逆序对，参考归并排序
      * @param arr
-     * @param copy
      * @param start
      * @param end
-     * @return
+     * @param temp
      */
-    public int inversePairsCore(int[] arr, int[] copy, int start, int end){
-        if (start == end){
-            copy[start] = arr[start];
-            return 0;
+    public void split(int[] arr, int start, int end, int[] temp){
+        if (start < end){
+            int mid = (start + end) >> 1;
+            split(arr, start, mid, temp);
+            split(arr, mid+1, end, temp);
+            merge(arr, start, mid, end, temp);
         }
+    }
 
-        int mid = (end + start)/2;
-        int left = inversePairsCore(copy, arr, start, mid);
-        int right = inversePairsCore(copy, arr, mid + 1, end);
-
-        int i = mid;
-        int j = end;
-        int indexCopy = end;
-        int count = 0;
-
-        while (i >= start && j >= mid + 1){
-            if (arr[i] > arr[j]){
-                copy[indexCopy--] = arr[i--];
-                count += j - mid;
+    public void merge(int[] arr, int start, int mid, int end, int[] temp){
+        int i = start;
+        int j = mid+1;
+        int index = 0;
+        while (i <= mid && j <= end){
+            if (arr[i] < arr[j]){
+                temp[index++] = arr[i++];
             }else {
-                copy[indexCopy--] = arr[j--];
+                temp[index++] = arr[j++];
+                count = (count + (mid - i + 1))%1000000007;
             }
         }
-        for (; i >= start; i--){
-            copy[indexCopy--] = arr[i--];
+        while (i <= mid){
+            temp[index++] = arr[i++];
         }
-        for (; j >= mid + 1; j--){
-            copy[indexCopy--] = arr[j--];
+        while (j <= end){
+            temp[index++] = arr[j++];
         }
-        return left + right + count;
+        index = 0;
+        while (start <= end){
+            arr[start++] = temp[index++];
+        }
     }
 }
