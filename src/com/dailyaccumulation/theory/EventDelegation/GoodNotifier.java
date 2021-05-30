@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern.EventDelegation;
+package com.dailyaccumulation.theory.EventDelegation;
 
 public class GoodNotifier extends Notifier {
 

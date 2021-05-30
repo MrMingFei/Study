@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern;
+package com.dailyaccumulation.theory;
 
 public class CommonCook {
     public static void main(String[] args) throws InterruptedException {

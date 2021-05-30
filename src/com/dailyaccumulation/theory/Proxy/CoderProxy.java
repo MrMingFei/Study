@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern.Proxy;
+package com.dailyaccumulation.theory.Proxy;
 
 public class CoderProxy implements ICoder {
 

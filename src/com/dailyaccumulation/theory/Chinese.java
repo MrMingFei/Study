@@ -1,6 +1,4 @@
-package com.thisAndSuper;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
+package com.dailyaccumulation.theory;
 
 class Person {
     public static void prt(String S)

@@ -1,19 +1,15 @@
 package com.Interview;
 
+import java.io.*;
+import java.util.*;
 
 public class TestHH {
+
     public static void main(String[] args) {
-        char[] str = {'H','H'};
-        System.out.println(new String(str));
+
     }
-}
 
 
-class Kth{
-    int value;
-    public Kth(int value){
-        this.value = value;
-    }
 }
 
 class BinaryTreeNode{

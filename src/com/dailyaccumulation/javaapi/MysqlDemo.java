@@ -1,4 +1,4 @@
-package com.thisAndSuper;
+package com.dailyaccumulation.javaapi;
 
 import java.sql.*;
 

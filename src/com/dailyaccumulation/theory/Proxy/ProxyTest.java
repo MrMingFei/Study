@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern.Proxy;
+package com.dailyaccumulation.theory.Proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

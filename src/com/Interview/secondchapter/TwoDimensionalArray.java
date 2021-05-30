@@ -12,7 +12,7 @@ public class TwoDimensionalArray {
     public static boolean find(int[][] matrix, int rows, int columns, int number){
         boolean found = false;
         if (matrix != null && rows > 0 && columns > 0){
-            for (int row = 0, column = columns-1; row < rows && column > 0;){
+            for (int row = 0, column = columns-1; row < rows && column >= 0;){
                 if (matrix[row][column] == number){
                     found = true;
                     break;

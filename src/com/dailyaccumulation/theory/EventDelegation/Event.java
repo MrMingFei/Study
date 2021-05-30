@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern.EventDelegation;
+package com.dailyaccumulation.theory.EventDelegation;
 
 import java.lang.reflect.Method;
 

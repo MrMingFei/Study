@@ -1,4 +1,4 @@
-package com.dailyaccumulation.pattern.EventDelegation;
+package com.dailyaccumulation.theory.EventDelegation;
 
 public abstract class Notifier {
     private EventHandler eventHandler = new EventHandler();

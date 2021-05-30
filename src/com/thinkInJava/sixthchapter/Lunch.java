@@ -23,7 +23,7 @@ class Soup1{
 class Soup2{
     private Soup2(){}
     // (2)Create a static object and return a reference
-    // upon request.(The "Singleton" pattern):
+    // upon request.(The "Singleton" theory):
     private static Soup2 s2 = new Soup2();
     public static Soup2 access(){
         return s2;
